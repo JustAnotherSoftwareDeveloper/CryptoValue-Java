@@ -25,5 +25,14 @@ public class CurrencyEntry {
 		this.BTCValue=BTCValue;
 		this.ETHValue=ETHValue;
 	}
+	public Double getBTC() {
+		return this.BTCValue;
+	}
+	public Double getETH() {
+		return this.ETHValue;
+	}
+	public LocalDateTime getEntryTime() {
+		return this.entryTime;
+	}
 	
 }

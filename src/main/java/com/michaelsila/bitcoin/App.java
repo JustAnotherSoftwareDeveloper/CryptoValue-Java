@@ -19,7 +19,8 @@ public class App
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-    	System.out.println(btcValue);
-    	System.out.println(ethValue);
+    	CurrencyEntry currencyEntry=new CurrencyEntry(btcValue,ethValue);
+    	CryptoValueWriter cryptoValueWriter=new CryptoValueWriter(currencyEntry);
+    	cryptoValueWriter.writeEntry();
     }
 }
